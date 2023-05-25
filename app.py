@@ -16,7 +16,7 @@ def local_css(file_name):
             slt.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=True)
 
 local_css(f'0m0waye/style.css')
-
+img_contact_form = Image.open(f'0m0waye/images.jfif")
 with slt.container():
     slt.subheader ("HI I am Omowaye Victor :wave:")
     slt.title("A Data Analyst")
