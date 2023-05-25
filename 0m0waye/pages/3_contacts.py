@@ -6,7 +6,7 @@ def local_css(file_name):
     with open(file_name) as f:
         slt.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=True)
 
-local_css(f'style/style.css')
+local_css(f'style.css')
 
 slt.write("Drop Your Messages Below")
 
