@@ -15,7 +15,7 @@ def local_css(file_name):
         with open(file_name) as f:
             slt.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=True)
 
-local_css("style\style.css")
+local_css("0m0waye\style.css")
 
 lottie_coding =load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_dews3j6m.json")
 img_contact_form = Image.open("images\images.jfif")
