@@ -1,7 +1,7 @@
 from PIL import Image
 import requests
 import streamlit as slt
-import streamlit_lottie
+
 
 slt.set_page_config(page_title= "My WebPage", page_icon= ":tada:", layout="wide")
 def load_lottieurl(url):
@@ -17,8 +17,6 @@ def local_css(file_name):
 
 local_css("0m0waye\style.css")
 
-lottie_coding =load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_dews3j6m.json")
-img_contact_form = Image.open("images\images.jfif")
 with slt.container():
     slt.subheader ("HI I am Omowaye Victor :wave:")
     slt.title("A Data Analyst")
