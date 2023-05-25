@@ -10,10 +10,6 @@ layout = "wide"
 slt.title("Main Page")
 slt.sidebar.success("Select a Page above.")
 
-x = slt.slider("Select an integer x", 0, 10, 1)
-y = slt.slider("Select an integer y", 0, 10, 1)
-df = pd.DataFrame({"x": [x], "y": [y] , "x + y": [x + y]}, index = ["addition row"])
-slt.write(df)
 
 if "my_input" not in slt.session_state:
     slt.session_state["my_input"] = " "
