@@ -15,7 +15,7 @@ def local_css(file_name):
         with open(file_name) as f:
             slt.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=True)
 
-local_css("0m0waye\style.css")
+local_css(f'0m0waye/style.css')
 
 with slt.container():
     slt.subheader ("HI I am Omowaye Victor :wave:")
