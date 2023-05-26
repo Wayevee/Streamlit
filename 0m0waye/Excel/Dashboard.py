@@ -1,3 +1,4 @@
+from gitly.colab.plot import GitlyPlotter
 import plotly.express as px
 import streamlit as slt
 import plotly as px
