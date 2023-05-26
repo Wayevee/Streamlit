@@ -1,6 +1,6 @@
 import streamlit as slt
 import pandas as pd
-import plotly as px
+import chart_studio.plotly as px
 
 slt.set_page_config(page_title = "Sales DashBoard",
 page_icon = ":chart_with_upwards_trend:",
