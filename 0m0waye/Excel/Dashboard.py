@@ -1,6 +1,7 @@
+import plotly.express as px
 import streamlit as slt
 import plotly as px
-import pandas as pd
+#import pandas as pd
 
 
 slt.set_page_config(page_title = "Sales DashBoard",
