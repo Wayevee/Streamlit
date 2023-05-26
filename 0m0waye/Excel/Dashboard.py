@@ -1,4 +1,7 @@
-from gitly.colab.plot import GitlyPlotter
+from plotly.offline import plot, iplot, init_notebook_mode
+import plotly.graph_objs as go
+init_notebook_mode(connected=True)
+#from gitly.colab.plot import GitlyPlotter
 import plotly.express as px
 import streamlit as slt
 import plotly as px
