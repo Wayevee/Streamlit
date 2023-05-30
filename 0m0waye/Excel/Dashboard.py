@@ -1,6 +1,6 @@
 
 #from gitly.colab.plot import GitlyPlotter
-import plotly.express as px
+#import plotly.express as px
 import streamlit as slt
 #import plotly.io as px
 #import pandas as pd
