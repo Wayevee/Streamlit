@@ -1,5 +1,4 @@
 
-conda activate
 pip install openpyxl
 
 
