@@ -3,7 +3,7 @@
 #from gitly.colab.plot import GitlyPlotter
 #import plotly.express as px
 import streamlit as slt
-#import plotly.io as px
+import plotly.io as px
 import pandas as pd
 #import openpyxl
 
