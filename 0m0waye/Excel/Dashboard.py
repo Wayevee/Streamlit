@@ -4,14 +4,14 @@
 import streamlit as slt
 #import plotly.io as px
 import pandas as pd
-import openpyxl
+#import openpyxl
 
 slt.set_page_config(page_title = "Sales DashBoard",
 page_icon = ":chart_with_upwards_trend:",
 layout = "wide"
 )
 df = pd.read_excel(r'0m0waye/Excel/supermarkt_sales1.xlsx',
-     #engine = 'openpyxl',
+     engine = 'openpyxl',
      #sheet_name = 'Sales'
      #skiprows = 3
      #usecols= "B:R",
