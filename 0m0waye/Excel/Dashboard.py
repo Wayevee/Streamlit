@@ -1,8 +1,4 @@
 
-pip install openpyxl
-
-
-
 
 #from gitly.colab.plot import GitlyPlotter
 #import plotly.express as px
