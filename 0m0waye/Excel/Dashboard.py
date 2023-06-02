@@ -3,7 +3,7 @@
 #from gitly.colab.plot import GitlyPlotter
 #import plotly.express as px
 import streamlit as slt
-import plotly.io as px
+import matplotlib as px
 import pandas as pd
 #import openpyxl
 
@@ -45,7 +45,7 @@ default=df["Gender"].unique()
 df_selection = df.query(
     "City == @city & Customer_type == @Ct & Gender == @G"
 )
-
+ax = px.subplot()
 
 #slt.dataframe(df_selection)
 
@@ -76,7 +76,7 @@ slt.markdown("---")
 sales_by_product_line = (
     df_selection.groupby(by=["Product line"]).sum()[["Total"]].sort_values("Total")
 )
-fig_product_slaes = px.bar(
+fig_product_slaes = ax.bar(
     sales_by_product_line,
     x = "Total",
     y = sales_by_product_line.index,
@@ -94,7 +94,7 @@ fig_product_slaes.update_layout(
 #slt.plotly_chart(fig_product_slaes)
 
 sales_by_hour=df_selection.groupby(by=["Hour"]).sum()[["Total"]]
-fig_hourly_sales = px.bar(
+fig_hourly_sales = ax.bar(
     sales_by_hour,
     x = sales_by_hour.index,
     y = "Total",
