@@ -8,9 +8,7 @@ import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 from matplotlib.pyplot import figure
 #import plotly.plotly as plty
-%matplotlib inline
-matplotlib.rcParams['figure.figsize'] = (12,8) 
-#import openpyxl
+
 
 slt.set_page_config(page_title = "Sales DashBoard",
 page_icon = ":chart_with_upwards_trend:",
