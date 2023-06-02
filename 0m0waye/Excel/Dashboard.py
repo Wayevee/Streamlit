@@ -3,8 +3,13 @@
 #from gitly.colab.plot import GitlyPlotter
 #import plotly.express as px
 import streamlit as slt
-import matplotlib as px
 import pandas as pd
+import matplotlib.pyplot as plt 
+plt.style.use('ggplot')
+from matplotlib.pyplot import figure
+#import plotly.plotly as plty
+%matplotlib inline
+matplotlib.rcParams['figure.figsize'] = (12,8) 
 #import openpyxl
 
 slt.set_page_config(page_title = "Sales DashBoard",
